@@ -10,27 +10,25 @@ public class Activity03 extends Activity {
 
 	Intent intent;
 	String age;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_03);
-        
-        age = getIntent().getStringExtra( "age" );
-    	intent = new Intent( this, Activity04.class );
-    	intent.putExtra( "age", age );
-    }
 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_03);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity01, menu);
-        return true;
-    }
+		age = getIntent().getStringExtra("age").toString();
+		intent = new Intent(this, Activity04.class);
+		intent.putExtra("age", age);
+	}
 
-    public void onClick(View v)
-    {
-    	startActivity( intent );
-    }
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity01, menu);
+		return true;
+	}
+
+	public void onClick(View v) {
+		startActivity(intent);
+	}
 }

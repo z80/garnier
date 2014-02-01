@@ -10,44 +10,35 @@ public class Activity02 extends Activity {
 
 	Intent intent;
 	String age;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        age = getIntent().getStringExtra( "age" );
-    	intent = new Intent( this, Activity03.class );
-    	intent.putExtra( "age", age );
-    	
-    	if ( age == "25" )
-    	{
-            setContentView(R.layout.activity_02_25);
-    	}
-    	else if ( age == "35" )
-    	{
-    		setContentView(R.layout.activity_02_35);
-    	}
-    	else if ( age == "45" )
-    	{
-    		setContentView(R.layout.activity_02_45);
-    	}
-    	else
-    	{
-    		setContentView(R.layout.activity_02_55);
-    	}
-    }
 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity01, menu);
-        return true;
-    }
+		age = getIntent().getStringExtra("age").toString();
+		intent = new Intent(this, Activity03.class);
+		intent.putExtra("age", age);
 
-    public void onClick(View v)
-    {
-    	startActivity( intent );
-    }
-    
+		if (age.contentEquals( "25" ) ) {
+			setContentView(R.layout.activity_02_25);
+		} else if (age.contentEquals( "35" ) ) {
+			setContentView(R.layout.activity_02_35);
+		} else if (age.contentEquals( "45" ) ) {
+			setContentView(R.layout.activity_02_45);
+		} else {
+			setContentView(R.layout.activity_02_55);
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity01, menu);
+		return true;
+	}
+
+	public void onClick(View v) {
+		startActivity(intent);
+	}
+
 }
