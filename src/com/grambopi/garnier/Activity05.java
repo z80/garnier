@@ -6,16 +6,19 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 
-public class Activity01 extends Activity {
+public class Activity05 extends Activity {
 
 	Intent intent;
+	String age;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_01);
+        setContentView(R.layout.activity_05);
         
-    	intent = new Intent( this, Activity02.class );
+        //age = getIntent().getStringExtra( "age" );
+    	intent = new Intent( this, Activity06.class );
+    	//intent.putExtra( "age", age );
     }
 
 

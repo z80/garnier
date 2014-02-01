@@ -28,6 +28,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginBottom="0dp"
         android:contentDescription="Slide 07 35"
+        android:onClick="onClick"
         android:src="@drawable/button_07" />
     
 </RelativeLayout>

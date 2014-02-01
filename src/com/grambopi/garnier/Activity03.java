@@ -6,16 +6,19 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 
-public class Activity01 extends Activity {
+public class Activity03 extends Activity {
 
 	Intent intent;
+	String age;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_01);
+        setContentView(R.layout.activity_03);
         
-    	intent = new Intent( this, Activity02.class );
+        age = getIntent().getStringExtra( "age" );
+    	intent = new Intent( this, Activity04.class );
+    	intent.putExtra( "age", age );
     }
 
 
@@ -26,28 +29,8 @@ public class Activity01 extends Activity {
         return true;
     }
 
-    public void onClick25(View v)
+    public void onClick(View v)
     {
-    	intent.putExtra( "age", "25" );
     	startActivity( intent );
     }
-    
-    public void onClick35(View v)
-    {
-    	intent.putExtra( "age", "35" );
-    	startActivity( intent );
-    }
-    
-    public void onClick45(View v)
-    {
-    	intent.putExtra( "age", "45" );
-    	startActivity( intent );
-    }
-
-    public void onClick55(View v)
-    {
-    	intent.putExtra( "age", "55" );
-    	startActivity( intent );
-    }
-
 }
