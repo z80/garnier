@@ -28,6 +28,9 @@ public class Activity01 extends Activity {
 
     public void onClick25(View v)
     {
+    	//Intent i = new Intent( this, Activity02.class );
+    	//i.set
+    	//startService( i );
     }
     
     public void onClick35(View v)
