@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_margin="0dp"
         android:contentDescription="@string/background"
-        android:src="@drawable/slide_04" />
+        android:src="@drawable/slide_02_45" />
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -25,10 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignRight="@+id/imageView1"
-        android:layout_marginRight="70dp"
+        android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-        android:contentDescription="Slide 04"
-        android:src="@drawable/button_04" />
+        android:contentDescription="45 years option"
+        android:src="@drawable/button_02" />
 
 </RelativeLayout>
 

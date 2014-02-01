@@ -10,72 +10,59 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/background" android:contentDescription="@string/background"/>
+        android:layout_margin="0dp"
+        android:contentDescription="@string/background"
+        android:src="@drawable/slide_05" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/garnier_logo" />
-
-    <EditText
-        android:id="@+id/editText1"
+    <ImageButton
+        android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/imageView2"
-        android:ems="10"
-        android:gravity="left"
-        android:inputType="textMultiLine"
-        android:text="@string/bold_02"
-        android:textSize="10sp" 
-        android:textStyle="bold"
-        />
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="25 years option"
+        android:src="@drawable/button_01_25" />
 
-    <EditText
-        android:id="@+id/EditText01"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="35 years option"
+        android:src="@drawable/button_01_35" />
+    
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
         android:layout_alignRight="@+id/imageView1"
-        android:layout_below="@+id/editText1"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textMultiLine"
-        android:text="@string/text_02_a" 
-        android:textSize="10sp"
-        />
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="45 years option"
+        android:src="@drawable/button_01_45" />
 
-    <Button
-        android:id="@+id/button25"
+    <ImageButton
+        android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClick25"
-        android:text="@string/btn_02" />
-
-    <EditText
-        android:id="@+id/EditText02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView1"
         android:layout_alignRight="@+id/imageView1"
-        android:layout_below="@+id/EditText01"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textMultiLine"
-        android:text="@string/text_05_b"
-        android:textSize="10sp" />
-
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="55 years option"
+        android:src="@drawable/button_01_55" />
+    
 </RelativeLayout>
+
+
