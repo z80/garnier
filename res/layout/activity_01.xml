@@ -30,7 +30,8 @@
         android:layout_marginBottom="0dp"
         android:contentDescription="25 years option"
         android:onClick="onClick25"
-        android:src="@drawable/button_01_25" />
+        android:src="@drawable/button_01_25"
+        android:background="@drawable/custom_button" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -42,7 +43,8 @@
         android:layout_marginBottom="0dp"
         android:contentDescription="35 years option"
         android:onClick="onClick35"
-        android:src="@drawable/button_01_35" />
+        android:src="@drawable/button_01_35"
+        android:background="@drawable/custom_button" />
     
     <ImageButton
         android:id="@+id/imageButton3"
@@ -54,7 +56,8 @@
         android:layout_marginBottom="0dp"
         android:contentDescription="45 years option"
         android:onClick="onClick45"
-        android:src="@drawable/button_01_45" />
+        android:src="@drawable/button_01_45"
+        android:background="@drawable/custom_button" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -66,7 +69,8 @@
         android:layout_marginBottom="0dp"
         android:contentDescription="55 years option"
         android:onClick="onClick55"
-        android:src="@drawable/button_01_55" />
+        android:src="@drawable/button_01_55"
+        android:background="@drawable/custom_button" />
     
 </RelativeLayout>
 

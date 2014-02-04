@@ -30,7 +30,8 @@
         android:layout_marginBottom="0dp"
         android:contentDescription="25 years option"
         android:onClick="onClick"
-        android:src="@drawable/button_07" />
+        android:src="@drawable/button_07"
+        android:background="@drawable/custom_button" />
 
 </RelativeLayout>
 

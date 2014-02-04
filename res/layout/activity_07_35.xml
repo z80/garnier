@@ -30,7 +30,8 @@
         android:layout_marginBottom="0dp"
         android:contentDescription="Slide 07 35"
         android:onClick="onClick"
-        android:src="@drawable/button_07" />
+        android:src="@drawable/button_07"
+        android:background="@drawable/custom_button" />
     
 </RelativeLayout>
 
