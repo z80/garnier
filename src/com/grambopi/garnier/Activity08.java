@@ -40,7 +40,7 @@ public class Activity08 extends Activity {
     public void onBackPressed() {
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage("Выйти из приложения?")
+		builder.setMessage("Выход из приложения")
 		       .setCancelable(false)
 		       .setPositiveButton("Да", new DialogInterface.OnClickListener()
 		       							{
