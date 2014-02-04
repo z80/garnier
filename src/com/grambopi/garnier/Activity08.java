@@ -2,6 +2,8 @@ package com.grambopi.garnier;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.view.Menu;
@@ -33,5 +35,30 @@ public class Activity08 extends Activity {
 		getMenuInflater().inflate(R.menu.activity01, menu);
 		return true;
 	}
+	
+	@Override
+    public void onBackPressed() {
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage("Exit application?")
+		       .setCancelable(false)
+		       .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+		       							{
+		           							public void onClick(DialogInterface dialog, int id)
+		           			                {
+		           								// do things
+		           								//finish();
+		           								Intent intent = new Intent(Intent.ACTION_MAIN);
+		           								intent.addCategory(Intent.CATEGORY_HOME);
+		           								intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		           								startActivity(intent);		           								
+		           			                }
+		                                }
+		                         );
+		AlertDialog alert = builder.create();
+		alert.show();
+
+
+    }   
 
 }
