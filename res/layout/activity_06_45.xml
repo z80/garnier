@@ -27,7 +27,7 @@
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_marginLeft="125dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="25 years option"
         android:onClick="onClick"
         android:src="@drawable/button_06"
