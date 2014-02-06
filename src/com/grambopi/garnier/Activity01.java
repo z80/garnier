@@ -38,24 +38,28 @@ public class Activity01 extends Activity {
 		intent = new Intent(this, Activity02.class);
 		intent.putExtra("age", "25");
 		startActivity(intent);
+		finish();
 	}
 
 	public void onClick35(View v) {
 		intent = new Intent(this, Activity02.class);
 		intent.putExtra("age", "35");
 		startActivity(intent);
+		finish();
 	}
 
 	public void onClick45(View v) {
 		intent = new Intent(this, Activity02.class);
 		intent.putExtra("age", "45");
 		startActivity(intent);
+		finish();
 	}
 
 	public void onClick55(View v) {
 		intent = new Intent(this, Activity02.class);
 		intent.putExtra("age", "55");
 		startActivity(intent);
+		finish();
 	}
 
 }

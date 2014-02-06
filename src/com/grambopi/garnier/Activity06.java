@@ -47,6 +47,7 @@ public class Activity06 extends Activity {
 
 	public void onClick(View v) {
 		startActivity(intent);
+		finish();
 	}
 
 }
