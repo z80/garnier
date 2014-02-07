@@ -20,10 +20,10 @@
         android:contentDescription="@string/background"
         android:src="@drawable/slide_07_35" />
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="85dp"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_marginLeft="150dp"
@@ -31,6 +31,8 @@
         android:contentDescription="Slide 07 35"
         android:onClick="onClick"
         android:src="@drawable/button_07"
+        style="@style/ButtonFont"
+        android:text="ПОЧУВСТВУЙТЕ МОЛОДОСТЬ ВАШЕЙ КОЖИ КАЖДОЙ СВОЕЙ КЛЕТОЧКОЙ!"
         android:background="@drawable/custom_button" />
     
 </RelativeLayout>

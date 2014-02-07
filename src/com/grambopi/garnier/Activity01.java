@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 public class Activity01 extends Activity {
 
@@ -17,13 +19,13 @@ public class Activity01 extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		// Fix landscape orientation.
-		setRequestedOrientation( ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE );
 		//Remove title bar
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		//Remove notification bar
 		getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );		
-		
+		// Fix landscape orientation.
+		setRequestedOrientation( ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE );
+
 		setContentView( R.layout.activity_01 );
 	}
 

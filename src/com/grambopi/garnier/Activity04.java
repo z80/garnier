@@ -18,12 +18,12 @@ public class Activity04 extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		// Fix landscape orientation.
-		setRequestedOrientation( ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE );
 		//Remove title bar
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		//Remove notification bar
 		getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );		
+		// Fix landscape orientation.
+		setRequestedOrientation( ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE );
 				
 		setContentView(R.layout.activity_04);
 

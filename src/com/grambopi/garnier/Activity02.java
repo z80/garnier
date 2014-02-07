@@ -18,12 +18,12 @@ public class Activity02 extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		// Fix landscape orientation.
-		setRequestedOrientation( ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE );
 		//Remove title bar
 		requestWindowFeature( Window.FEATURE_NO_TITLE );
 		//Remove notification bar
 		getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );		
+		// Fix landscape orientation.
+		setRequestedOrientation( ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE );
 		
 		age = getIntent().getStringExtra("age").toString();
 		intent = new Intent(this, Activity03.class);
