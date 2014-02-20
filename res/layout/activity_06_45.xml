@@ -20,20 +20,18 @@
         android:contentDescription="@string/background"
         android:src="@drawable/slide_06_45" />
 
-    <Button
-        android:id="@+id/imageButton1"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
-        android:layout_height="85dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_marginLeft="425dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="25 years option"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
         android:onClick="onClick"
-        android:src="@drawable/button_06"
-        style="@style/ButtonFont"
-        android:text="ЗАПУСТИТЕ ПРОЦЕСС ОБНОВЛЕНИЯ КОЖИ!"
-        android:background="@drawable/custom_button" />
+        android:src="@drawable/button_06" 
+        android:layout_marginBottom="10dp" />
+
+
 
 </RelativeLayout>
 

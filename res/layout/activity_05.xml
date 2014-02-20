@@ -20,65 +20,54 @@
         android:contentDescription="@string/background"
         android:src="@drawable/slide_05" />
 
-    <Button
-        android:id="@+id/imageButton1"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_marginLeft="125dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="25 years option"
+    <ImageButton
+        android:id="@+id/imageButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="172dp"
+        android:background="@android:color/transparent"
         android:onClick="onClick25"
-        android:src="@drawable/button_01_25"
-        style="@style/ButtonFont"
-        android:text="25+"
-        android:background="@drawable/custom_button" />
+        android:src="@drawable/button_01_25" 
+        android:layout_marginBottom="10dp" />
 
-    <Button
-        android:id="@+id/imageButton2"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_marginLeft="425dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="35 years option"
+    <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="420dp"
+        android:layout_toRightOf="@+id/imageButton02"
+        android:background="@android:color/transparent"
         android:onClick="onClick35"
-        android:src="@drawable/button_01_35"
-        style="@style/ButtonFont"
-        android:text="35+"
-        android:background="@drawable/custom_button" />
-    
-    <Button
-        android:id="@+id/imageButton3"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_marginRight="425dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="45 years option"
-        android:onClick="onClick45"
-        android:src="@drawable/button_01_45"
-        style="@style/ButtonFont"
-        android:text="45+"
-        android:background="@drawable/custom_button" />
+        android:src="@drawable/button_01_35" 
+        android:layout_marginBottom="10dp" />
 
-    <Button
-        android:id="@+id/imageButton4"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_marginRight="125dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="55 years option"
+
+    <ImageButton
+        android:id="@+id/ImageButton03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="680dp"
+        android:layout_toRightOf="@+id/imageButton03"
+        android:background="@android:color/transparent"
+        android:onClick="onClick45"
+        android:src="@drawable/button_01_45" 
+        android:layout_marginBottom="10dp" />
+    
+    <ImageButton
+        android:id="@+id/ImageButton04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="950dp"
+        android:layout_toRightOf="@+id/imageButton04"
+        android:background="@android:color/transparent"
         android:onClick="onClick55"
-        android:src="@drawable/button_01_55"
-        style="@style/ButtonFont"
-        android:text="55+"
-        android:background="@drawable/custom_button" />
+        android:src="@drawable/button_01_55" 
+        android:layout_marginBottom="10dp" />
     
 </RelativeLayout>
 
