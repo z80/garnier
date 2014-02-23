@@ -28,7 +28,7 @@
         android:layout_centerHorizontal="true"
         android:background="@null"
         android:onClick="onClick"
-        android:src="@drawable/button_06"
+        android:src="@drawable/button_02_35"
         android:layout_marginBottom="10dp" />
 
 
